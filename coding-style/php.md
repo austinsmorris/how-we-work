@@ -70,7 +70,7 @@ This simply means use human-readable variable names that make sense in the conte
 
 Yes:
 ```php
-$area = $height * width;
+$area = $height * $width;
 ```
     
 No:
