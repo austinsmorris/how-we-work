@@ -5,7 +5,7 @@ For all new php code, we strictly adhere to the [PSR-2](https://github.com/php-f
 
 ###PHP Tags###
 
-**There MUST be one blank line after the `<?php` tag.**
+**There MUST be one blank line after the **`<?php`** tag.**
 
 Yes:
 
@@ -48,46 +48,51 @@ class Foo extends Bar
 
 ###Properties and Variables###
 
-**Properties and variables MUST be in `$lowerCamelCase`.**
+**Properties and variables MUST be in **`$lowerCamelCase`**.**
 
 Yes:
-
-    $myPropertyName
-    $yourVariableName
-    $properties
+```php
+$myPropertyName = $foo;
+$yourVariableName = $foo;
+$properties = $foo;
+```
     
 No:
-
-    $my_property_name
-    $yourvariablename
-    $Properties
+```php
+$my_property_name = $foo;
+$yourvariablename = $foo;
+$Properties = $foo;
+```
     
 **The purpose of a property or variable SHOULD be obvious.**
 
 This simply means use human-readable variable names that make sense in the context of their usage.  We are writing maintainable code, not algebraic formulas.
 
 Yes:
-
-    $area = $height * width;
+```php
+$area = $height * width;
+```
     
 No:
-
-    $z = $x + $y;
-    
+```php
+$z = $x + $y;
+```
+  
 ###Associative Array Keys###
 
-**Associative array keys must me all lower-case and `underscore_separated`.**
+**Associative array keys must me all lower-case and **`'underscore_separated'`**.**
 
 This is the cleanest way to support json serialization in a way that is human-readable and supports the use of javascript dot notation when consumed by a client.  Therefore it shall be consistent in all code.
 
 Yes:
-
-    $foo['my_key_name'] = $bar;
-    
+```php
+$foo['my_key_name'] = $bar;
+```
+  
 No:
-
-    $foo['yourKeyName'] = $bar;
-    $foo['your-key-name'] = $bar;
-    $foo['your key name'] = $bar;
-    $foo['Keys'] = $bar;
-    
+```php
+$foo['yourKeyName'] = $bar;
+$foo['your-key-name'] = $bar;
+$foo['your key name'] = $bar;
+$foo['Keys'] = $bar;
+```
