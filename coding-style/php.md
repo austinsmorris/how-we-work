@@ -68,3 +68,18 @@ Yes:
 No:
     $z = $x + $y;
     
+###Associative Array Keys###
+
+**Associative array keys must me all lower-case and <code>underscore_separated</code>.**
+
+This is the cleanest way to support json serialization in a way that is human-readable and supports the use of javascript dot notation when consumed by a client.  Therefore it shall be consistent in all code.
+
+Yes:
+    $foo['my_key_name'] = $bar;
+    
+No:
+    $foo['yourKeyName'] = $bar;
+    $foo['your-key-name'] = $bar;
+    $foo['your key name'] = $bar;
+    $foo['Keys'] = $bar;
+    
