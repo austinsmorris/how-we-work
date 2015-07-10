@@ -5,7 +5,7 @@ For all new php code, we strictly adhere to the [PSR-2](https://github.com/php-f
 
 ###PHP Tags###
 
-**There MUST be one blank line after the **`<?php`** tag.**
+**There MUST be one blank line after the** `<?php` **tag.**
 
 Yes:
 
@@ -48,7 +48,7 @@ class Foo extends Bar
 
 ###Properties and Variables###
 
-**Properties and variables MUST be in **`$lowerCamelCase`**.**
+**Properties and variables MUST be in** `$lowerCamelCase`**.**
 
 Yes:
 ```php
@@ -80,9 +80,9 @@ $z = $x + $y;
   
 ###Associative Array Keys###
 
-**Associative array keys must be in all lower-case and **`'underscore_separated'`**.**
+**Associative array keys MUST be in all lower-case and** `'underscore_separated'`**.**
 
-This is the cleanest way to support json serialization in a way that is human-readable and supports the use of javascript dot notation when consumed by a client.  Therefore it shall be consistent in all code.
+This is the cleanest way to support json serialization in a way that is human-readable and supports the use of javascript dot notation when consumed by a client.  Therefore, we want it to be consistent in all code.
 
 Yes:
 ```php
