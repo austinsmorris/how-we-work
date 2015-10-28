@@ -4,5 +4,4 @@
 
 ## Table of Le Contents
 
- 1. Development
-   1. JavaScript
+[PHP Coding Style](https://github.com/varsitynewsnetwork/how-we-work/blob/master/coding-style/php.md)
